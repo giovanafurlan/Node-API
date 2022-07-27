@@ -7,7 +7,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Route to Login Page
 app.get('/login', (req, res) => {
-  res.sendFile(__dirname + '/static/index.html');
+  res.sendFile(__dirname + '/dist/index.html');
 });
 
 app.post('/login', (req, res) => {
@@ -20,4 +20,4 @@ app.post('/login', (req, res) => {
 
 app.use(cors()); //habilitando cors na nossa aplicacao
 
-app.listen('https://scintillating-pithivier-d36c55.netlify.app'); //execucao do servidor
+app.listen(3000); //execucao do servidor

@@ -20,4 +20,4 @@ app.post('/login', (req, res) => {
 
 app.use(cors()); //habilitando cors na nossa aplicacao
 
-app.listen(3000); //execucao do servidor
+app.listen('https://scintillating-pithivier-d36c55.netlify.app'); //execucao do servidor
